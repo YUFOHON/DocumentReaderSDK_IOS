@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A864F742F20A8B400E90155 /* DocumentReaderSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A864F732F20A8B400E90155 /* DocumentReaderSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A864F952F20ABD500E90155 /* DocumentReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F942F20ABD500E90155 /* DocumentReader.swift */; };
+		3A864F982F20B02F00E90155 /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A864F972F20B02F00E90155 /* CoreNFC.framework */; };
+		3A864F9A2F20B03600E90155 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A864F992F20B03600E90155 /* AVFoundation.framework */; };
+		3A864F9C2F20B03D00E90155 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A864F9B2F20B03D00E90155 /* Vision.framework */; };
+		3A864FA22F20B7FF00E90155 /* AlignmentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F832F20AA2900E90155 /* AlignmentState.swift */; };
+		3A864FA32F20B7FF00E90155 /* DocumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F812F20AA2900E90155 /* DocumentType.swift */; };
+		3A864FA42F20B7FF00E90155 /* MRZInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F822F20AA2900E90155 /* MRZInfo.swift */; };
+		3A864FA52F20B7FF00E90155 /* MRZResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F842F20AA2900E90155 /* MRZResult.swift */; };
+		3A864FA62F20B7FF00E90155 /* PassportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F852F20AA2900E90155 /* PassportData.swift */; };
+		3A864FA92F20B81E00E90155 /* MRZGuidanceOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F932F20AB4D00E90155 /* MRZGuidanceOverlay.swift */; };
+		3A864FAA2F20B82200E90155 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F892F20AA8900E90155 /* CameraViewController.swift */; };
+		3A864FAB2F20B82200E90155 /* MRZExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F8D2F20AAAB00E90155 /* MRZExtractor.swift */; };
+		3A864FAC2F20B82200E90155 /* MRZCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F8A2F20AAAB00E90155 /* MRZCleaner.swift */; };
+		3A864FAD2F20B82200E90155 /* MRZValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F8B2F20AAAB00E90155 /* MRZValidator.swift */; };
+		3A864FAE2F20B82200E90155 /* MrzParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F8C2F20AAAB00E90155 /* MrzParserManager.swift */; };
+		3A864FAF2F20B82200E90155 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F8F2F20AAEA00E90155 /* CameraManager.swift */; };
+		3A864FB02F20B82800E90155 /* ScanOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F912F20AB0500E90155 /* ScanOverlayView.swift */; };
+		3A864FB12F20B82800E90155 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F902F20AB0500E90155 /* Constants.swift */; };
+		3A864FB22F20B82800E90155 /* OCRProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864F922F20AB0500E90155 /* OCRProcessor.swift */; };
+		3A864FB62F20BB7000E90155 /* PassportNFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864FB42F20BB7000E90155 /* PassportNFCReader.swift */; };
+		3A864FB72F20BB7000E90155 /* EepDocumentReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864FB52F20BB7000E90155 /* EepDocumentReader.swift */; };
+		3A864FBA2F20BB8000E90155 /* MRZDetectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864FB82F20BB8000E90155 /* MRZDetectionHandler.swift */; };
+		3A864FBB2F20BB8000E90155 /* DocumentAlignmentDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864FB92F20BB8000E90155 /* DocumentAlignmentDetector.swift */; };
+		3A864FC12F20BBB800E90155 /* BaseMrzParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864FBD2F20BBB800E90155 /* BaseMrzParser.swift */; };
+		3A864FC22F20BBB800E90155 /* MrzParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864FBE2F20BBB800E90155 /* MrzParser.swift */; };
+		3A864FC32F20BBB800E90155 /* Td3PassportParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864FBF2F20BBB800E90155 /* Td3PassportParser.swift */; };
+		3A864FC42F20BBB800E90155 /* EepMrzParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A864FC02F20BBB800E90155 /* EepMrzParser.swift */; };
+		3AC4C7EB2F21C73100458536 /* NFCPassportReader in Frameworks */ = {isa = PBXBuildFile; productRef = 3AC4C7EA2F21C73100458536 /* NFCPassportReader */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A864F702F20A8B400E90155 /* DocumentReaderSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DocumentReaderSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A864F732F20A8B400E90155 /* DocumentReaderSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentReaderSDK.h; sourceTree = "<group>"; };
+		3A864F812F20AA2900E90155 /* DocumentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentType.swift; sourceTree = "<group>"; };
+		3A864F822F20AA2900E90155 /* MRZInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZInfo.swift; sourceTree = "<group>"; };
+		3A864F832F20AA2900E90155 /* AlignmentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentState.swift; sourceTree = "<group>"; };
+		3A864F842F20AA2900E90155 /* MRZResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZResult.swift; sourceTree = "<group>"; };
+		3A864F852F20AA2900E90155 /* PassportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportData.swift; sourceTree = "<group>"; };
+		3A864F892F20AA8900E90155 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		3A864F8A2F20AAAB00E90155 /* MRZCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZCleaner.swift; sourceTree = "<group>"; };
+		3A864F8B2F20AAAB00E90155 /* MRZValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZValidator.swift; sourceTree = "<group>"; };
+		3A864F8C2F20AAAB00E90155 /* MrzParserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrzParserManager.swift; sourceTree = "<group>"; };
+		3A864F8D2F20AAAB00E90155 /* MRZExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZExtractor.swift; sourceTree = "<group>"; };
+		3A864F8F2F20AAEA00E90155 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		3A864F902F20AB0500E90155 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3A864F912F20AB0500E90155 /* ScanOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanOverlayView.swift; sourceTree = "<group>"; };
+		3A864F922F20AB0500E90155 /* OCRProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRProcessor.swift; sourceTree = "<group>"; };
+		3A864F932F20AB4D00E90155 /* MRZGuidanceOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZGuidanceOverlay.swift; sourceTree = "<group>"; };
+		3A864F942F20ABD500E90155 /* DocumentReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentReader.swift; sourceTree = "<group>"; };
+		3A864F972F20B02F00E90155 /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/iOSSupport/System/Library/Frameworks/CoreNFC.framework; sourceTree = DEVELOPER_DIR; };
+		3A864F992F20B03600E90155 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A864F9B2F20B03D00E90155 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Vision.framework; sourceTree = DEVELOPER_DIR; };
+		3A864FB42F20BB7000E90155 /* PassportNFCReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassportNFCReader.swift; sourceTree = "<group>"; };
+		3A864FB52F20BB7000E90155 /* EepDocumentReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EepDocumentReader.swift; sourceTree = "<group>"; };
+		3A864FB82F20BB8000E90155 /* MRZDetectionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRZDetectionHandler.swift; sourceTree = "<group>"; };
+		3A864FB92F20BB8000E90155 /* DocumentAlignmentDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentAlignmentDetector.swift; sourceTree = "<group>"; };
+		3A864FBD2F20BBB800E90155 /* BaseMrzParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMrzParser.swift; sourceTree = "<group>"; };
+		3A864FBE2F20BBB800E90155 /* MrzParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MrzParser.swift; sourceTree = "<group>"; };
+		3A864FBF2F20BBB800E90155 /* Td3PassportParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Td3PassportParser.swift; sourceTree = "<group>"; };
+		3A864FC02F20BBB800E90155 /* EepMrzParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EepMrzParser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A864F6D2F20A8B400E90155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A864F9C2F20B03D00E90155 /* Vision.framework in Frameworks */,
+				3A864F9A2F20B03600E90155 /* AVFoundation.framework in Frameworks */,
+				3A864F982F20B02F00E90155 /* CoreNFC.framework in Frameworks */,
+				3AC4C7EB2F21C73100458536 /* NFCPassportReader in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A864F662F20A8B400E90155 = {
+			isa = PBXGroup;
+			children = (
+				3A864F722F20A8B400E90155 /* DocumentReaderSDK */,
+				3A864F712F20A8B400E90155 /* Products */,
+				3A864F962F20B02F00E90155 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A864F712F20A8B400E90155 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A864F702F20A8B400E90155 /* DocumentReaderSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A864F722F20A8B400E90155 /* DocumentReaderSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3A864F7A2F20A90400E90155 /* Sources */,
+				3A864F732F20A8B400E90155 /* DocumentReaderSDK.h */,
+			);
+			path = DocumentReaderSDK;
+			sourceTree = "<group>";
+		};
+		3A864F7A2F20A90400E90155 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3A864F7F2F20A98B00E90155 /* Utils */,
+				3A864F7E2F20A98400E90155 /* NFC */,
+				3A864F7D2F20A97B00E90155 /* OCR */,
+				3A864F7C2F20A96D00E90155 /* Core */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3A864F7C2F20A96D00E90155 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3A864FBC2F20BBA000E90155 /* MRZ */,
+				3A864FB52F20BB7000E90155 /* EepDocumentReader.swift */,
+				3A864FB42F20BB7000E90155 /* PassportNFCReader.swift */,
+				3A864F902F20AB0500E90155 /* Constants.swift */,
+				3A864F922F20AB0500E90155 /* OCRProcessor.swift */,
+				3A864F912F20AB0500E90155 /* ScanOverlayView.swift */,
+				3A864F802F20A9AD00E90155 /* Models */,
+				3A864F942F20ABD500E90155 /* DocumentReader.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3A864F7D2F20A97B00E90155 /* OCR */ = {
+			isa = PBXGroup;
+			children = (
+				3A864FB92F20BB8000E90155 /* DocumentAlignmentDetector.swift */,
+				3A864FB82F20BB8000E90155 /* MRZDetectionHandler.swift */,
+				3A864F932F20AB4D00E90155 /* MRZGuidanceOverlay.swift */,
+				3A864F8A2F20AAAB00E90155 /* MRZCleaner.swift */,
+				3A864F8D2F20AAAB00E90155 /* MRZExtractor.swift */,
+				3A864F8C2F20AAAB00E90155 /* MrzParserManager.swift */,
+				3A864F8B2F20AAAB00E90155 /* MRZValidator.swift */,
+				3A864F892F20AA8900E90155 /* CameraViewController.swift */,
+				3A864F8F2F20AAEA00E90155 /* CameraManager.swift */,
+			);
+			path = OCR;
+			sourceTree = "<group>";
+		};
+		3A864F7E2F20A98400E90155 /* NFC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NFC;
+			sourceTree = "<group>";
+		};
+		3A864F7F2F20A98B00E90155 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3A864F802F20A9AD00E90155 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A864F832F20AA2900E90155 /* AlignmentState.swift */,
+				3A864F812F20AA2900E90155 /* DocumentType.swift */,
+				3A864F822F20AA2900E90155 /* MRZInfo.swift */,
+				3A864F842F20AA2900E90155 /* MRZResult.swift */,
+				3A864F852F20AA2900E90155 /* PassportData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A864F962F20B02F00E90155 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A864F9B2F20B03D00E90155 /* Vision.framework */,
+				3A864F992F20B03600E90155 /* AVFoundation.framework */,
+				3A864F972F20B02F00E90155 /* CoreNFC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A864FBC2F20BBA000E90155 /* MRZ */ = {
+			isa = PBXGroup;
+			children = (
+				3A864FBD2F20BBB800E90155 /* BaseMrzParser.swift */,
+				3A864FC02F20BBB800E90155 /* EepMrzParser.swift */,
+				3A864FBE2F20BBB800E90155 /* MrzParser.swift */,
+				3A864FBF2F20BBB800E90155 /* Td3PassportParser.swift */,
+			);
+			path = MRZ;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3A864F6B2F20A8B400E90155 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A864F742F20A8B400E90155 /* DocumentReaderSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3A864F6F2F20A8B400E90155 /* DocumentReaderSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A864F772F20A8B400E90155 /* Build configuration list for PBXNativeTarget "DocumentReaderSDK" */;
+			buildPhases = (
+				3A864F6B2F20A8B400E90155 /* Headers */,
+				3A864F6C2F20A8B400E90155 /* Sources */,
+				3A864F6D2F20A8B400E90155 /* Frameworks */,
+				3A864F6E2F20A8B400E90155 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocumentReaderSDK;
+			packageProductDependencies = (
+				3AC4C7EA2F21C73100458536 /* NFCPassportReader */,
+			);
+			productName = DocumentReaderSDK;
+			productReference = 3A864F702F20A8B400E90155 /* DocumentReaderSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A864F672F20A8B400E90155 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					3A864F6F2F20A8B400E90155 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+				};
+			};
+			buildConfigurationList = 3A864F6A2F20A8B400E90155 /* Build configuration list for PBXProject "DocumentReaderSDK" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A864F662F20A8B400E90155;
+			packageReferences = (
+				3AC4C7E92F21C73100458536 /* XCRemoteSwiftPackageReference "NFCPassportReader" */,
+			);
+			productRefGroup = 3A864F712F20A8B400E90155 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A864F6F2F20A8B400E90155 /* DocumentReaderSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A864F6E2F20A8B400E90155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A864F6C2F20A8B400E90155 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A864FA52F20B7FF00E90155 /* MRZResult.swift in Sources */,
+				3A864FBA2F20BB8000E90155 /* MRZDetectionHandler.swift in Sources */,
+				3A864FA22F20B7FF00E90155 /* AlignmentState.swift in Sources */,
+				3A864FAB2F20B82200E90155 /* MRZExtractor.swift in Sources */,
+				3A864FA62F20B7FF00E90155 /* PassportData.swift in Sources */,
+				3A864FA42F20B7FF00E90155 /* MRZInfo.swift in Sources */,
+				3A864FC32F20BBB800E90155 /* Td3PassportParser.swift in Sources */,
+				3A864FC22F20BBB800E90155 /* MrzParser.swift in Sources */,
+				3A864FB02F20B82800E90155 /* ScanOverlayView.swift in Sources */,
+				3A864FB22F20B82800E90155 /* OCRProcessor.swift in Sources */,
+				3A864FB12F20B82800E90155 /* Constants.swift in Sources */,
+				3A864FAC2F20B82200E90155 /* MRZCleaner.swift in Sources */,
+				3A864FA32F20B7FF00E90155 /* DocumentType.swift in Sources */,
+				3A864FAF2F20B82200E90155 /* CameraManager.swift in Sources */,
+				3A864FAD2F20B82200E90155 /* MRZValidator.swift in Sources */,
+				3A864FAE2F20B82200E90155 /* MrzParserManager.swift in Sources */,
+				3A864FBB2F20BB8000E90155 /* DocumentAlignmentDetector.swift in Sources */,
+				3A864FA92F20B81E00E90155 /* MRZGuidanceOverlay.swift in Sources */,
+				3A864FB62F20BB7000E90155 /* PassportNFCReader.swift in Sources */,
+				3A864F952F20ABD500E90155 /* DocumentReader.swift in Sources */,
+				3A864FB72F20BB7000E90155 /* EepDocumentReader.swift in Sources */,
+				3A864FAA2F20B82200E90155 /* CameraViewController.swift in Sources */,
+				3A864FC42F20BBB800E90155 /* EepMrzParser.swift in Sources */,
+				3A864FC12F20BBB800E90155 /* BaseMrzParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3A864F752F20A8B400E90155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A864F762F20A8B400E90155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3A864F782F20A8B400E90155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H9PJ632WPG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = hk.ico.csqms.DocumentReaderSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A864F792F20A8B400E90155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H9PJ632WPG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = hk.ico.csqms.DocumentReaderSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A864F6A2F20A8B400E90155 /* Build configuration list for PBXProject "DocumentReaderSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A864F752F20A8B400E90155 /* Debug */,
+				3A864F762F20A8B400E90155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A864F772F20A8B400E90155 /* Build configuration list for PBXNativeTarget "DocumentReaderSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A864F782F20A8B400E90155 /* Debug */,
+				3A864F792F20A8B400E90155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3AC4C7E92F21C73100458536 /* XCRemoteSwiftPackageReference "NFCPassportReader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/YUFOHON/NFCPassportReader.git";
+			requirement = {
+				branch = "debug-modifications";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AC4C7EA2F21C73100458536 /* NFCPassportReader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AC4C7E92F21C73100458536 /* XCRemoteSwiftPackageReference "NFCPassportReader" */;
+			productName = NFCPassportReader;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3A864F672F20A8B400E90155 /* Project object */;
+}
